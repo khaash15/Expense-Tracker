@@ -1,0 +1,13 @@
+<!-- <app-profile></app-profile> -->
+
+<nav>
+  <ol>
+    <a routerLink="/profile">Home</a>
+    <a routerLink="/display">Expense
+    
+</a>
+  </ol>
+</nav>
+<router-outlet></router-outlet>
+<app-expense (add)="submit($event)"></app-expense>
+<app-display [dl]="ExpenseList" (dele)="remove($event)"></app-display>
