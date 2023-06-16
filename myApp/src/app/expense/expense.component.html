@@ -1,0 +1,37 @@
+<form [formGroup]="form" >
+    <h3>Total Expenditure: {{bal}}</h3>
+    <h3>Available Balance: {{20000-bal}}</h3>
+
+    <!-- <div *ngIf="category?.invalid && category?.touched">
+        <p *ngIf="category?.errors?.['required']">Please fill the category 😉?</p>
+      </div> -->
+    
+      <mat-form-field>
+        <input matInput type="text" placeholder="Enter Category" formControlName="category" />
+        <mat-error *ngIf="category?.errors?.['required']">
+
+            Please fill the category 😉?
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Enter Price" formControlName="price" />
+        <mat-error *ngIf="price?.errors?.['required']">
+
+            Please add the price 😉?
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput type="text" placeholder="Enter Date" formControlName="date" />
+        <mat-error *ngIf="date?.errors?.['required']">
+
+            Please add the Date 😉?
+        </mat-error>
+    </mat-form-field>
+      
+
+ 
+<!-- <button (click)="onsubmit()"  [disabled]="form.invalid">submit</button> -->
+
+<button mat-raised-button type="submit" [disabled]="form.invalid" (click)="onsubmit()">Submit</button>
+  </form>

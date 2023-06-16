@@ -1,0 +1,24 @@
+div{
+    display: grid;
+    place-content: center;
+}
+.user-pic {
+    height: 250px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+   
+  }
+  .id{
+    text-align: center;
+    font-style: italic;
+  }
+  .user-msg {
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  .user-name {
+    font-style: italic;
+    font-weight: bold;
+  }

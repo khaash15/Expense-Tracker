@@ -1,0 +1,6 @@
+<div *ngFor="let i of dl">
+    <p>{{i.category}}</p>
+    <p>{{i.price}}</p>
+    <p>{{i.date}}</p>
+    <button (click)="del(i.id)">delete</button>
+    </div>
