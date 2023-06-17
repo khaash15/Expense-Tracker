@@ -11,3 +11,10 @@
 <router-outlet></router-outlet>
 <app-expense (add)="submit($event)"></app-expense>
 <app-display [dl]="ExpenseList" (dele)="remove($event)"></app-display>
+<!-- <app-display [dl]="ExpenseList"  (editItem)="edit($event)"></app-display> -->
+
+<!-- <div *ngIf="selectedItem">
+  <h2>Edit Expense</h2>
+  <form>
+    <label>Category:</label>
+    <input type="text" [(ngModel)] -->

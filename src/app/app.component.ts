@@ -24,6 +24,15 @@ export class AppComponent {
       });
     });
   }
+
+  // edit(a: any) {
+  //   // console.log(a)
+  //   this.apiput(a).subscribe((i) => {
+  //     this.apiget().subscribe((i) => {
+  //       this.ExpenseList = i;
+  //     });
+  //   });
+  // }
   constructor(private http: HttpClient) {}
   apiget() {
     return this.http.get('https://648a952717f1536d65e94edc.mockapi.io/ExpenseList');
@@ -34,6 +43,12 @@ export class AppComponent {
       data
     );
   }
+  // apiput(data: any) {
+  //   return this.http.put(
+  //     'https://648a952717f1536d65e94edc.mockapi.io/ExpenseList',
+  //     data
+  //   );
+  // }
   apidelete(id: number) {
     return this.http.delete(
       `https://648a952717f1536d65e94edc.mockapi.io/ExpenseList/${id}`

@@ -8,9 +8,14 @@ import { Component ,Input, Output, EventEmitter} from '@angular/core';
 export class DisplayComponent {
   @Input() dl: any = '';
   @Output() dele = new EventEmitter<any>();
+  // @Output() edi = new EventEmitter<any>();
   del(id: string) {
     console.log(id);
     this.dele.emit(id);
   }
+  // edit(id: string) {
+  //   console.log(id);
+  //   this.edi.emit(id);
+  // }
   
 }
