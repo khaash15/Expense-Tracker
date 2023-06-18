@@ -3,6 +3,14 @@
 <h2 class="user-msg">
   Hello, <span class="user-name">{{ name }}</span> 🎉
 </h2>
-<h4 class="id">ID: {{id}}</h4>>
+<h4 class="id">ID: {{id}}</h4>
+<h2>Note: The saving target is set to 50% of the income.</h2>
+
+<h3><b>Available Balance:</b> {{income}}</h3>
+<h3><b>Money Spent:</b>  {{expense}} </h3>
+<h3 style="background-color:Tomato;" *ngIf="expense > savingGoal; else msg"><b>"Your expenses exceed 50% of your income.<br>You have exceeded your saving goal by "{{ expense - savingGoal }}"</b></h3>
+<ng-template #msg>
+  <p style="background-color:MediumSeaGreen;"><b>Congratulations!⭐ You are in good shape with your expenses.</b></p>
+</ng-template>
 
 </div>

@@ -1,6 +1,13 @@
-<div *ngFor="let i of dl">
-    <p>{{i.category}}</p>
-    <p>{{i.price}}</p>
-    <p>{{i.date}}</p>
-    <button (click)="del(i.id)">delete</button>
-    </div>
+     <div class="total">
+        Total Value: {{ calculateTotal() }}
+      </div>
+    <mat-card *ngFor="let i of dl">
+        <mat-card-content>
+          <p>Category: {{ i.category }}</p>
+          <p>Price: {{ i.price }}</p>
+          <p>Date: {{ i.date }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="warn" (click)="del(i.id)">Delete</button>
+        </mat-card-actions>
+      </mat-card>

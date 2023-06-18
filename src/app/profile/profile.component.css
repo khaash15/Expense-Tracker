@@ -1,7 +1,9 @@
 div{
-    display: grid;
-    place-content: center;
-}
+  Display:flex;
+  Flex-direction: column; 
+  Align-items: center; 
+  Justify-content : center; 
+  }
 .user-pic {
     height: 250px;
     aspect-ratio: 1 / 1;

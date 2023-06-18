@@ -18,10 +18,15 @@ import { MatCardModule } from '@angular/material/card';
 import { Routes, RouterModule } from '@angular/router';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { IncomeComponent } from './income/income.component';
+import { Display2Component } from './display2/display2.component';
+import { ExpdisComponent } from './expdis/expdis.component';
+import { IncdisComponent } from './incdis/incdis.component';
 
 const routes: Routes = [
-  { path: 'display', component: DisplayComponent },
+  { path: 'expdis', component: ExpdisComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'incdis', component: IncdisComponent },
   //{path:'**',component:NotFoundComponent},
 ];
 
@@ -31,6 +36,10 @@ const routes: Routes = [
     ProfileComponent,
     ExpenseComponent,
     DisplayComponent,
+    IncomeComponent,
+    Display2Component,
+    ExpdisComponent,
+    IncdisComponent,
   ],
   imports: [
     BrowserModule,
