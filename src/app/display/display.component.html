@@ -7,7 +7,12 @@
           <p>Price: {{ i.price }}</p>
           <p>Date: {{ i.date }}</p>
         </mat-card-content>
+        <div class ="options">
         <mat-card-actions>
           <button mat-button color="warn" (click)="del(i.id)">Delete</button>
         </mat-card-actions>
+        <mat-card-actions>
+          <button mat-button color="warn" (click)="edit(i.id)">Edit</button>
+        </mat-card-actions>
+      </div>
       </mat-card>

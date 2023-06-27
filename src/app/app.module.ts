@@ -22,11 +22,13 @@ import { IncomeComponent } from './income/income.component';
 import { Display2Component } from './display2/display2.component';
 import { ExpdisComponent } from './expdis/expdis.component';
 import { IncdisComponent } from './incdis/incdis.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   { path: 'expdis', component: ExpdisComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'incdis', component: IncdisComponent },
+  {path:'edit/:id',component:EditComponent}
   //{path:'**',component:NotFoundComponent},
 ];
 
@@ -40,6 +42,7 @@ const routes: Routes = [
     Display2Component,
     ExpdisComponent,
     IncdisComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
